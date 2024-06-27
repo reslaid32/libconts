@@ -45,10 +45,10 @@ VectorResult vector_push_back(Vector *vector, void *element) {
     return VectorSuccess;
 }
 
-VectorResult vector_get(Vector *vector, size_t index, void **element) {
+VectorResult vector_get(Vector *vector, size_t index, void *element) {
     if (vector == NULL || element == NULL || index >= vector->size) return VectorFailure;
 
-    *element = (char *)vector->data + index * vector->element_size;
+    memcpy(element, (char *)vector->data + index * vector->element_size, vector->element_size);
     return VectorSuccess;
 }
 

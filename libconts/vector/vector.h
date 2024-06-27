@@ -20,7 +20,7 @@ VectorResult vector_create(size_t element_size, Vector* vectorOutput);
 VectorResult vector_destroy(Vector *vector);
 
 VectorResult vector_push_back(Vector *vector, void *element);
-VectorResult vector_get(Vector *vector, size_t index, void **element);
+VectorResult vector_get(Vector *vector, size_t index, void *element);
 VectorResult vector_set(Vector *vector, size_t index, void *element);
 VectorResult vector_clear(Vector *vector);
 
