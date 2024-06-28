@@ -9,14 +9,28 @@ elseif(CMAKE_C_COMPILER_ID STREQUAL "MSVC")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /W4 /WX")
 endif()
 
-include_directories(libconts/hashmap libconts/vector)
+include_directories(libconts)
 
 set(SOURCES
+	# main
     main.c
+	# libconts
     libconts/hashmap/hashmap.c
     libconts/vector/vector.c
-    tests/hashmap.c
+	libconts/list/linked.c
+	libconts/list/doubly_linked.c
+	libconts/stack/stack.c
+	libconts/queue/queue.c
+	libconts/deque/deque.c
+	libconts/set/set.c
+    # tests
+	tests/hashmap.c
     tests/vector.c
+	tests/list.c
+	tests/stack.c
+	tests/queue.c
+	tests/deque.c
+	tests/set.c
 )
 
 add_executable(test ${SOURCES})

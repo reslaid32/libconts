@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include <hashmap.h>
+#include <hashmap/hashmap.h>
 
 void test_hashmap_basic_operations() {
     HashMap map;

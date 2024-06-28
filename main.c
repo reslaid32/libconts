@@ -1,19 +1,39 @@
 
 #include <stdio.h>
 
-void test_hashmap_basic_operations();
-void test_vector_basic_operations();
+void test_hashmap_basic_operations(); // tests/hashmap.c
+void test_vector_basic_operations(); // tests/vector.c
+void test_linked_list_basic_operations(); // tests/list.c
+void test_doubly_linked_list_basic_operations(); // tests/list.c
+void test_stack_basic_operations(); // tests/stack.c
+void test_queue_basic_operations(); // tests/queue.c
+void test_deque_basic_operations(); // tests/deque.c
+void test_set_basic_operations(); // tests/set.c
 
 int main(void) {
-    printf("HashMap: Run\n");
     test_hashmap_basic_operations();
-    printf("HashMap: End\n");    
+    printf("HashMap: Passed\n");    
 
-    printf("Vector: Run\n");
     test_vector_basic_operations();
-    printf("Vector: End\n");    
+    printf("Vector: Passed\n");    
 
-    printf("All tests passed\n");
+    test_linked_list_basic_operations();
+    test_doubly_linked_list_basic_operations();
+    printf("List: Passed\n");
+
+    test_stack_basic_operations();
+    printf("Stack: Passed\n");
+
+    test_queue_basic_operations();
+    printf("Queue: Passed\n");
+
+    test_deque_basic_operations();
+    printf("Deque: Passed\n");
+
+    test_set_basic_operations();
+    printf("Set: Passed\n");
+
+    printf("$ All tests passed\n");
 
     return 0;
 }

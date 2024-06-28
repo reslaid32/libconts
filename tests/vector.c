@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include <vector.h>
+#include <vector/vector.h>
 
 void test_vector_basic_operations() {
     Vector vector;
