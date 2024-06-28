@@ -18,5 +18,5 @@
  - Deque operates bidirectionally, the deque (double-ended queue) operates similarly to both a stack and a queue, allowing insertion and deletion of elements from both ends of the structure. It supports operations like push/pop at both front and back ends efficiently. 
  8. [Set](libconts/set/set.h)
  - Unique elements, a set stores unique elements and supports operations like insertion, deletion, and membership testing efficiently.
- 9. [BinaryTree](libconts/binary/tree.h)
+ 9. [BinaryTree](libconts/tree/binary.h)
  - Hierarchical data structure, a binary tree organizes data in nodes where each node has at most two children: a left child and a right child. Nodes are arranged such that elements smaller than the parent are to the left, and elements larger are to the right. This structure facilitates efficient searching, insertion, and deletion operations.
