@@ -23,7 +23,7 @@ set(SOURCES
 	libconts/queue/queue.c
 	libconts/deque/deque.c
 	libconts/set/set.c
-    libconts/binary/tree.c
+    libconts/tree/binary.c
 	# tests
 	tests/hashmap.c
     tests/vector.c

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include <binary/tree.h>
+#include <tree/binary.h>
 
 void test_binary_tree_basic_operations() {
     BinaryTree tree;
