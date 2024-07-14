@@ -20,6 +20,7 @@ set(SOURCES
 	libconts/list/linked.c
 	libconts/list/doubly_linked.c
 	libconts/stack/stack.c
+    libconts/stack/linked.c
 	libconts/queue/queue.c
 	libconts/deque/deque.c
 	libconts/set/set.c
