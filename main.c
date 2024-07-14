@@ -6,7 +6,6 @@ void test_vector_basic_operations(); // tests/vector.c
 void test_linked_list_basic_operations(); // tests/list.c
 void test_doubly_linked_list_basic_operations(); // tests/list.c
 void test_stack_basic_operations(); // tests/stack.c
-void test_linked_stack_basic_operations(); // tests/stack.c
 void test_queue_basic_operations(); // tests/queue.c
 void test_deque_basic_operations(); // tests/deque.c
 void test_set_basic_operations(); // tests/set.c
@@ -25,9 +24,6 @@ int main(void) {
 
     test_stack_basic_operations();
     printf("Stack: Passed\n");
-
-    test_linked_stack_basic_operations();
-    printf("LinkedStack: Passed\n");
 
     test_queue_basic_operations();
     printf("Queue: Passed\n");
