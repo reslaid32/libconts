@@ -10,6 +10,7 @@ void test_queue_basic_operations(); // tests/queue.c
 void test_deque_basic_operations(); // tests/deque.c
 void test_set_basic_operations(); // tests/set.c
 void test_binary_tree_basic_operations(); // tests/tree.c
+void test_map_basic_operations(); // tests/map.c
 
 int main(void) {
     test_hashmap_basic_operations();
@@ -36,6 +37,9 @@ int main(void) {
 
     test_binary_tree_basic_operations();
     printf("BinaryTree: Passed\n");
+
+    test_map_basic_operations();
+    printf("Map: Passed\n");
 
     printf("$ All tests passed\n");
 

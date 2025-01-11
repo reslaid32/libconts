@@ -24,6 +24,7 @@ set(SOURCES
 	libconts/deque/deque.c
 	libconts/set/set.c
     libconts/tree/binary.c
+	libconts/map/map.c
 	# tests
 	tests/hashmap.c
     tests/vector.c
@@ -33,6 +34,7 @@ set(SOURCES
 	tests/deque.c
 	tests/set.c
 	tests/tree.c
+	tests/map.c
 )
 
 add_executable(test ${SOURCES})
