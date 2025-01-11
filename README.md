@@ -20,3 +20,5 @@
  - Unique elements, a set stores unique elements and supports operations like insertion, deletion, and membership testing efficiently.
  9. [BinaryTree](libconts/tree/binary.h)
  - Hierarchical data structure, a binary tree organizes data in nodes where each node has at most two children: a left child and a right child. Nodes are arranged such that elements smaller than the parent are to the left, and elements larger are to the right. This structure facilitates efficient searching, insertion, and deletion operations.
+ 10. [Map](libconts/map/map.h)
+ - Key-value storage, the principle of operation of a map involves maintaining a collection of key-value pairs, where each key is unique, and each key maps to a specific value. The map ensures efficient insertion, retrieval, and updating of values based on their keys. Keys and values can be of arbitrary data types, specified during the creation of the map. The internal implementation relies on a dynamic vector to store the key-value pairs.
