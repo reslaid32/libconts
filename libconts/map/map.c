@@ -87,3 +87,23 @@ MapResult map_clear(Map *map) {
 
     return vector_clear(&map->pairs) == VectorSuccess ? MapSuccess : MapFailure;
 }
+
+MapResult map_lookup(Map *map, void *key, void **valueOutput) {
+    if (map == NULL || key == NULL || valueOutput == NULL) return MapFailure;
+
+    // Loop through all key-value pairs in the map
+    for (size_t i = 0; i < map->pairs.size; i++) {
+        MapPair pair;
+        vector_get(&map->pairs, i, &pair);
+
+        // Compare the key with the given key
+        if (memcmp(pair.key, key, map->key_size) == 0) {
+            *valueOutput = pair.value;  // Set the output to the value of the found pair
+            return MapSuccess;          // Key found
+        }
+    }
+
+    // Key not found
+    *valueOutput = NULL;
+    return MapFailure;
+}

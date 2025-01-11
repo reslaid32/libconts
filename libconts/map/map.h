@@ -26,5 +26,6 @@ MapResult map_destroy(Map *map);
 MapResult map_insert(Map *map, void *key, void *value);
 MapResult map_get(Map *map, void *key, void *valueOutput);
 MapResult map_clear(Map *map);
+MapResult map_lookup(Map *map, void *key, void **valueOutput);
 
 #endif // MAP_H
